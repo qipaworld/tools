@@ -1,0 +1,61 @@
+- path: ios/iTunesArtwork.png
+  width:   512
+- path: ios/iTunesArtwork@2x.png
+  width:   1024
+- path: ios/Icon-60@2x.png
+  width:   120
+- path: ios/Icon-60@3x.png
+  width:   180
+- path: ios/Icon-76.png
+  width:   76
+- path: ios/Icon-76@2x.png
+  width:   152
+- path: ios/Icon-83.5@2x.png
+  width:   167
+- path: ios/Icon-Small-40.png
+  width:   40
+- path: ios/Icon-Small-40@2x.png
+  width:   80
+- path: ios/Icon-Small-40@3x.png
+  width:   120
+- path: ios/Icon-Small.png
+  width:   29
+- path: ios/Icon-Small@2x.png
+  width:   58
+- path: ios/Icon-Small@3x.png
+  width:   87
+- path: android/drawable-hdpi/icon.png
+  width:   72
+- path: android/drawable-mdpi/icon.png
+  width:   48
+- path: android/drawable-xhdpi/icon.png
+  width:   96
+- path: android/drawable-xxhdpi/icon.png
+  width:   144
+- path: android/drawable-xxxhdpi/icon.png
+  width:   192
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
