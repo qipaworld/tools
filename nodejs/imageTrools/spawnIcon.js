@@ -5,7 +5,7 @@ var imageResize = require("./imageResize.js");
 var YAML = require("js-yaml");
  
 var icon_ids = [
-	"./autoIcon.yaml",	
+	"./spawnIcon.yaml",	
 	// "./ios.yaml",	
 ]
 function main(){

@@ -11,13 +11,13 @@ imageMask.start = function(icon_path,mask_path,format)
 		console.log("no format! >> format = png".error)
 	}
 
-	var finder_path = icon_path.substring(0,icon_path.lastIndexOf("/"));
+	var directory =qpConsole.getFileDirectory(icon_path);
 
 	jimp.read(icon_path).then(function (icon_image) {
 		jimp.read(mask_path).then(function (mask_image) {
-			var path = "./imageMask."+format
-			if (finder_path!="") {
-				path = finder_path + "/imageMask."+format
+			var path = "./qipaworldIcon/imageMask."+format
+			if (directory!="") {
+				path = directory + "/qipaworldIcon/imageMask."+format
 			}
 			icon_image.composite(mask_image,1,1).write(path);
 		});

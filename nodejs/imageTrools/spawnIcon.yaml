@@ -1,0 +1,61 @@
+- path: qipaworldIcon/ios/iTunesArtwork.png
+  width:   512
+- path: qipaworldIcon/ios/iTunesArtwork@2x.png
+  width:   1024
+- path: qipaworldIcon/ios/Icon-60@2x.png
+  width:   120
+- path: qipaworldIcon/ios/Icon-60@3x.png
+  width:   180
+- path: qipaworldIcon/ios/Icon-76.png
+  width:   76
+- path: qipaworldIcon/ios/Icon-76@2x.png
+  width:   152
+- path: qipaworldIcon/ios/Icon-83.5@2x.png
+  width:   167
+- path: qipaworldIcon/ios/Icon-Small-40.png
+  width:   40
+- path: qipaworldIcon/ios/Icon-Small-40@2x.png
+  width:   80
+- path: qipaworldIcon/ios/Icon-Small-40@3x.png
+  width:   120
+- path: qipaworldIcon/ios/Icon-Small.png
+  width:   29
+- path: qipaworldIcon/ios/Icon-Small@2x.png
+  width:   58
+- path: qipaworldIcon/ios/Icon-Small@3x.png
+  width:   87
+- path: qipaworldIcon/android/drawable-hdpi/icon.png
+  width:   72
+- path: qipaworldIcon/android/drawable-mdpi/icon.png
+  width:   48
+- path: qipaworldIcon/android/drawable-xhdpi/icon.png
+  width:   96
+- path: qipaworldIcon/android/drawable-xxhdpi/icon.png
+  width:   144
+- path: qipaworldIcon/android/drawable-xxxhdpi/icon.png
+  width:   192
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
