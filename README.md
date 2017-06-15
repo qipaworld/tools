@@ -14,6 +14,13 @@
 node setup.js
 ```
 
+<hr>
+
+## 命令行工具都在console目录里 ##
+完整目录：nodejs/console
+
+<hr>
+
 ## 自动生成ios 和android icon 工具 ##
 运行 spawnIcon.js 后面加上icon原图（直接用鼠标拖到命令行即可），运行后会在源文件所在目录下创建 qipaworldIcon 目录，生成的icon会放到该目录下
 ```

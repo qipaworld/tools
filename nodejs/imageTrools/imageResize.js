@@ -7,21 +7,21 @@ imageResize.start = function(input_parameter,output_parameter)
 		return b.width - a.width;
 	})
 
-	qpConsole.assert(input_parameter,"no input_parameter".error);
-	qpConsole.assert(output_parameter,"no output_parameter".error);
+	qp.assert(input_parameter,"no input_parameter".error);
+	qp.assert(output_parameter,"no output_parameter".error);
 
 	for (var i in input_parameter) 
 	{
 		var input_path = input_parameter[i];
-		var directory =qpConsole.getFileDirectory(input_path);
+		var directory =qp.getFileDirectory(input_path);
 		
 		jimp.read(input_path).then(function (image) {
 			for (var i in output_parameter) 
 			{
 				var data = output_parameter[i];
 
-				qpConsole.assert(data.path,"no output image path".error);
-				qpConsole.assert(data.width,"no output image size".error);
+				qp.assert(data.path,"no output image path".error);
+				qp.assert(data.width,"no output image size".error);
 				
 				var path = "./"+data.path
 				if (directory!="") {

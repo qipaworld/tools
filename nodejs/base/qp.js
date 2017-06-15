@@ -1,10 +1,10 @@
 
-require("./consoleColor.js");
-var qpConsole = {};
+require("./logColor.js");
+var qp = {};
 
-qpConsole.fs = require("fs");
-qpConsole.assert =  require('assert');
-qpConsole.getFileDirectory = function(file_path){
+qp.fs = require("fs");
+qp.assert =  require('assert');
+qp.getFileDirectory = function(file_path){
     var directory = file_path.substring(0,file_path.lastIndexOf("/"));
         //检测平台
     if (process.platform == "win32"){
@@ -14,4 +14,4 @@ qpConsole.getFileDirectory = function(file_path){
     }
     return directory;
 }
-module.exports = qpConsole;
+module.exports = qp;
