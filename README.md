@@ -27,9 +27,9 @@ node setup.js
 node spawnIcon.js image_path
 ```
 ## 给图片加水印/角标 ##
-运行 addMask.js 后面加上icon原图 在加上水印/角标（直接用鼠标拖到命令行即可），运行后会在源文件所在目录下创建 qipaworldIcon 目录，生成的icon会放到该目录下
+运行 addMask.js 后面加上icon原图 在加上水印/角标（直接用鼠标拖到命令行即可）最后是图片类型可以不传默认为png ，运行后会在源文件所在目录下创建 qipaworldIcon 目录，生成的icon会放到该目录下
 ```
-node addMask.js image_path mask_path
+node addMask.js image_path mask_path image_format
 ```
 
 <hr>
