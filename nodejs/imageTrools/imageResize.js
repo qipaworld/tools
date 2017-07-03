@@ -15,20 +15,22 @@ imageResize.start = function(input_parameter,output_parameter)
 		var input_path = input_parameter[i];
 		var directory =qp.getFileDirectory(input_path);
 		
-		jimp.read(input_path).then(function (image) {
-			for (var i in output_parameter) 
-			{
-				var data = output_parameter[i];
+		jimp.read(input_path,function (err,image) {
+			if (!err){
+				for (var i in output_parameter) 
+				{
+					var data = output_parameter[i];
 
-				qp.assert(data.path,"no output image path".error);
-				qp.assert(data.width,"no output image size".error);
-				
-				var path = "./"+data.path
-				if (directory!="") {
-					path = directory + "/" + data.path
+					qp.assert(data.path,"no output image path".error);
+					qp.assert(data.width,"no output image size".error);
+					
+					var path = "./"+data.path
+					if (directory!="") {
+						path = directory + "/" + data.path
+					}
+					
+					image.resize(data.width,data.height || data.width).write(path);
 				}
-				
-				image.resize(data.width,data.height || data.width).write(path);
 			}
 		});
 		

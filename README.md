@@ -40,6 +40,12 @@ node spawnIcon.js image_path
 node addMask.js image_path mask_path image_format auto_size
 ```
 
+## 把图片大小添加到图片名字后面,支持一次修改文件夹内所有图片的名字 ##
+运行 addSizeToName.js 参数(icon原图或者文件夹（直接用鼠标拖到命令行即可）,导出图片的名字可以不传默认为image,导出图片格式可以不传默认为png) ，运行后会在源文件所在目录下创建 qipaworldIcon 目录，生成的icon会放到该目录下
+```
+node addSizeToName.js path name image_format
+```
+
 <hr>
 
 **版权所有者**
