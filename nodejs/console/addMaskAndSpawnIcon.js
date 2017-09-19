@@ -13,7 +13,7 @@ function main(){
 	var build = exec(mask_str, function(err,stdout,stderr){
 	    if (err) throw err;
 		console.log(stdout);
-		var directory = qp.getFileDirectory(icon_path);
+		var directory = qp.path.dirname(icon_path);
 		var spawn_str = "node spawnIcon.js " + directory + "/qipaworldIcon/imageMask."+format;
 		exec(spawn_str, function(err,stdout,stderr){
 		    if (err) throw err;

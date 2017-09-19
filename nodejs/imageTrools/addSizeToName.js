@@ -1,5 +1,5 @@
 
-var jimp = require("jimp");
+var sharp = require('sharp');
 var addSizeToName = {}
 addSizeToName.start = function(path,name,format)
 {
@@ -24,19 +24,35 @@ addSizeToName.start = function(path,name,format)
     	});
 	}
 	
-	console.log("addSizeToName finished".info);  
+	// console.log("addSizeToName finished".info);  
 }
 addSizeToName.rename = function(icon_path,name,format){
-	var directory = qp.getFileDirectory(icon_path);
-	jimp.read(icon_path,function (err,icon_image) {
-		if (!err){
-			var temp_path = "/qipaworldIcon/"+name+"_"+icon_image.bitmap.width+"_"+icon_image.bitmap.height+"."+format
+	var directory = qp.path.dirname(icon_path);
+	
+	var image = sharp(icon_path);
+	image.metadata(function(err, metadata) {
+		if (err){
+			console.log(icon_path.error);
+		}
+		else{
+			var temp_path = "/qipaworldIcon/"+name+"_"+metadata.width+"_"+metadata.height+"."+format
 			var path = "."+temp_path
 			if (directory!="") {
 				path = directory + temp_path
 			}
-			icon_image.write(path);
+			qp.mkdirs(qp.path.dirname(path));//检测路径是否存在，没有就创建一个
+
+			image.toFile(path, function (err) {
+		    	if(err){
+		    		console.log(path.error);
+		    	}
+				else{
+					console.log(path.green);
+				}
+				        
+		    });
 		}
 	});
+
 }
 module.exports=addSizeToName;

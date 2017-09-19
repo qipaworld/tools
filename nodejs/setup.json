@@ -9,7 +9,11 @@
     "version" : "3.8.4"
   },
   {
-    "name" : "jimp",
-    "version" : "0.2.28"
+    "name" : "sharp",
+    "version" : "0.18.1"
+  },
+  {
+    "name" : "path",
+    "version" : "0.12.7"
   }
 ]
